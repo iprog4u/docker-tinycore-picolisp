@@ -4,7 +4,7 @@ This is version 16.2 of the PicoLisp programming language in a Tinycore Linux co
 
 Simply run:
 ``` code
-docker run -it progit/picolisp
+docker pull progit/docker-tinycore-picolisp
 ```
 ... and you'll be immediately dropped into the REPL.
 ___
