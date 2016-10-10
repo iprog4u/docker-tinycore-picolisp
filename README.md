@@ -1,6 +1,6 @@
 ### 64-Bit PicoLisp in a Tinycore image.
 
-This is version 16.6 of the PicoLisp programming language in a Tinycore Linux container. The latest version of PicoLisp will be maintained in this image.  Based on tatsushid/docker-tinycore:7.1-x86_64.  **Now only 14MB!**
+This is version 16.6 of the PicoLisp programming language in a Tinycore Linux container. I will work to maintain the latest version.  Based on tatsushid/docker-tinycore:7.1-x86_64.  **Now only 14MB!**
 
 Simply run:
 ``` code
@@ -9,9 +9,24 @@ docker pull progit/docker-tinycore-picolisp
 
 and then:
 ``` code
-docker run -it progit/docker-tinycore-picolisp
+docker run -it --rm progit/docker-tinycore-picolisp
 ```
 ... and you'll be immediately dropped into the REPL.
+___
+
+To gain access to the shell:
+
+``` code
+docker run -it --rm progit/docker-tinycore-picolisp /bin/sh
+```
+
+and to share one of your local directories you can do:
+
+``` code
+docker run -it --rm -v /home/picolisp-rocks/src/my-cool-project:/home/pil/my-cool-project progit/docker-tinycore-picolisp /bin/sh
+```
+
+Now you have read/write access to the contents of the /home/picolisp-rocks/src/my-cool-project directory in your container.  There are more ways to get permanent storage in docker containers but that is beyond the scope of this appliance.  See data volumes and data persistence in containers.
 ___
 
 Taken from **(PDF)** [PicoLisp: The Scalpel of Programming A Radical Approach to Software Development](picolisp.com/wiki/!pdf?-B1103):
