@@ -1,7 +1,7 @@
 FROM tatsushid/7.1-x86_64
 
 RUN sudo adduser -D pil
-COPY pil.tar.gz /home/pil/pil.tgz
+COPY pil.tgz /home/pil/pil.tgz
 
 RUN sudo tar -xvzf /home/pil/pil.tgz -C /home/pil \
     && sudo ln -s /home/pil/picoLisp /usr/lib/picolisp \
