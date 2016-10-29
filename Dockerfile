@@ -1,4 +1,4 @@
-FROM tatsushid/7.1-x86_64
+FROM tatsushid/tinycore:7.2-x86_64
 
 RUN sudo adduser -D pil
 COPY pil.tgz /home/pil/pil.tgz
