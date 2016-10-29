@@ -1,6 +1,6 @@
 ### 64-Bit PicoLisp in a Tinycore image.
 
-This is version 16.6 of the PicoLisp programming language in a Tinycore Linux container. I will work to maintain the latest version.  Based on tatsushid/docker-tinycore:7.1-x86_64.  **Now only 14MB!**
+This is version 16.6 of the PicoLisp programming language in a Tinycore Linux container. I will work to maintain the latest version.  Based on tatsushid/docker-tinycore:7.2-x86_64.  **Now only 14MB!**
 
 Simply run:
 ``` code
