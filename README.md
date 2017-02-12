@@ -6,6 +6,10 @@ Simply run:
 ``` code
 docker pull progit/docker-tinycore-picolisp
 ```
+Then...
+``` code
+docker run -it --rm progit/docker-tinycore-picolisp 
+```
 ... and you'll be immediately dropped into the REPL.
 ___
 
