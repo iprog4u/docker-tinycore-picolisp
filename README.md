@@ -1,6 +1,6 @@
-### 64-Bit PicoLisp in a Tinycore image.
+### 64-Bit PicoLisp + Vim in a Tinycore image.
 
-This is version 16.12 of the PicoLisp programming language in a Tinycore Linux container. The latest version of PicoLisp will be maintained in this image.  Much thanks to Alexander Williams, Alexander Burger, and the whole picoLisp community for helping me get the latest source compiled!)  Based on tatsushid/docker-tinycore:7.2-x86_64.  **Now only 14MB!**
+This is version 17.6 of the PicoLisp programming language in a Tinycore Linux container. The latest version of PicoLisp running on the latest 64-bit Tinycore will be maintained in this image.  Much thanks to Alexander Williams, Alexander Burger, and the whole picoLisp community for helping me get the latest source compiled!  It turns out we can get a smaller image than a custom buildroot container by compiling the source on our host systems and then copying the compiled source of PicoLisp into it. Vim is included so that you can (edit 'sym) right in the image.  **Now only 14MB!**
 
 Simply run:
 ``` code
